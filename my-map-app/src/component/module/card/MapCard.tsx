@@ -6,6 +6,7 @@ import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
 import {useMapDrawHandlers} from "../../../hook/UseMapDrawHandlers.ts";
 import MapEvents from "../../../hook/MapEvents.ts";
+import MapToolbar from "./MapToolbar.tsx";
 
 L.Icon.Default.mergeOptions({
     iconRetinaUrl: new URL("leaflet/dist/images/marker-icon-2x.png", import.meta.url).href,
@@ -30,14 +31,14 @@ export default function MapCard({
                 <p className="text-sm text-blue-100 mt-1">برای انتخاب موقعیت، روی نقشه کلیک کنید</p>
             </div>
 
-            {/*<MapToolbar
+            <MapToolbar
                 position={position}
                 zoom={currentZoom}
                 onLatChange={(val) => setPosition([parseFloat(val), position[1]])}
                 onLngChange={(val) => setPosition([position[0], parseFloat(val)])}
                 onZoomChange={setCurrentZoom}
-                onGoToLocation={(lat, lng) => setPosition([lat, lng])}
-            />*/}
+               /* onGoToLocation={(lat, lng) => setPosition([lat, lng])}*/
+            />
 
             <div style={{ height, width: "100%", position: "relative" }}>
                 <MapContainer

@@ -4,7 +4,7 @@ interface Props {
     onLatChange: (val: string) => void;
     onLngChange: (val: string) => void;
     onZoomChange: (val: number) => void;
-    onGoToLocation: (lat: number, lng: number) => void;
+    // onGoToLocation: (lat: number, lng: number) => void;
 }
 
 export default function MapToolbar({
@@ -13,16 +13,16 @@ export default function MapToolbar({
                                        onLatChange,
                                        onLngChange,
                                        onZoomChange,
-                                       onGoToLocation,
+                                       // onGoToLocation,
                                    }: Props) {
-    const cities = [
+    /*const cities = [
         { name: "تهران", lat: 35.6892, lng: 51.389 },
         { name: "مشهد", lat: 36.2974, lng: 59.6061 },
         { name: "اصفهان", lat: 32.6546, lng: 51.668 },
         { name: "شیراز", lat: 29.5918, lng: 52.5836 },
         { name: "تبریز", lat: 38.0736, lng: 46.2919 },
         { name: "رودسر", lat: 37.1378, lng: 50.2856 },
-    ];
+    ];*/
 
     return (
         <div className="p-4 bg-gray-50 border-b">
@@ -68,7 +68,7 @@ export default function MapToolbar({
                 </div>
             </div>
 
-            <div className="mt-4">
+            {/*<div className="mt-4">
                 <p className="text-sm font-medium text-gray-700 mb-2">مکان‌های پیشنهادی:</p>
                 <div className="flex flex-wrap gap-2">
                     {cities.map((city) => (
@@ -81,7 +81,7 @@ export default function MapToolbar({
                         </button>
                     ))}
                 </div>
-            </div>
+            </div>*/}
         </div>
     );
 }
