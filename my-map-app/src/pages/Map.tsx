@@ -1,4 +1,4 @@
-import MapCard from "../component/mudole/card/MapCard.tsx";
+import MapCard from "../component/module/card/MapCard.tsx";
 
 export default function Map () {
     return (
